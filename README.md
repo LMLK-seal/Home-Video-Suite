@@ -1,8 +1,8 @@
 # 🎬 Home Video Suite
 
-A local, browser-based video utility built with Gradio. Stream your home videos with subtitle support, convert MKV/AVI files to web-compatible MP4, and permanently burn hardcoded subtitles — all from one clean interface. No cloud upload required.
+A local, browser-based video utility built with Gradio. Stream your home videos with subtitle support, convert MKV/AVI files to web-compatible MP4, and permanently burn hardcoded subtitles all from one clean interface. No cloud upload required.
 
-📡 Share with family & friends — no upload needed.
+📡 Share with family & friends - no upload needed.
 Every time you launch the app, Gradio generates a temporary public link (e.g. https://xxxx.gradio.live) that's printed in your terminal. Share that link with anyone on the internet and they can watch your videos directly from your machine — no file sharing service, no cloud storage, no account required. The link stays active as long as the app is running and expires shortly after you close it.
 
 
