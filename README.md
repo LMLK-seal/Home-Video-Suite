@@ -2,8 +2,6 @@
 
 A local, browser-based video utility built with [Gradio](https://www.gradio.app/). Stream your home videos with subtitle support, convert MKV/AVI files to web-compatible MP4, and permanently burn hardcoded subtitles — all from one clean interface. No cloud upload required.
 
-![Home Video Suite](https://github.com/LMLK-seal/Home-Video-Suite/blob/main/HVS.png?raw=true)
-
 ---
 
 ![Home Video Suite](https://github.com/LMLK-seal/Home-Video-Suite/blob/main/Screenshots/Screenshot.png)
