@@ -357,7 +357,7 @@ def convert_video(input_path: str, output_path: str, conversion_mode: str):
     try:
         _conv_process = subprocess.Popen(
             cmd, stdout=subprocess.DEVNULL, stderr=subprocess.PIPE,
-            universal_newlines=True, startupinfo=_startup_info()
+            encoding='utf-8', errors='replace', startupinfo=_startup_info()
         )
     except FileNotFoundError:
         yield f"❌ Could not launch FFmpeg at '{ffmpeg_exe}'. Try restarting your terminal.", 0.0
@@ -633,9 +633,9 @@ with gr.Blocks(theme=gr.themes.Soft(), title="🎬 Home Video Suite") as app:
                             placeholder="e.g. C:\\Users\\You\\Videos",
                             scale=4,
                         )
-                        stream_browse_btn = gr.Button("📂 1 - Browse", scale=1, min_width=90)
+                        stream_browse_btn = gr.Button("📂 Browse", scale=1, min_width=90)
 
-                    stream_scan_btn    = gr.Button("🔍 2 - Load Folder", variant="primary")
+                    stream_scan_btn    = gr.Button("🔍 Scan Folder", variant="primary")
                     stream_scan_status = gr.Textbox(label="Scanner Status", interactive=False)
 
                     gr.Markdown("### 🎞️ Media Selection")
@@ -651,7 +651,7 @@ with gr.Blocks(theme=gr.themes.Soft(), title="🎬 Home Video Suite") as app:
                             value="Hebrew (Windows-1255)", interactive=True, scale=2
                         )
 
-                    stream_play_btn    = gr.Button("▶️ 3 - Load Video", variant="primary")
+                    stream_play_btn    = gr.Button("▶️ Load Video", variant="primary")
                     stream_play_status = gr.Textbox(label="Player Status", interactive=False)
 
                 with gr.Column(scale=3):
